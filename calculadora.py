@@ -15,7 +15,7 @@ class pantalla(QMainWindow):   # Se crea una clase por ventana
 
         # Cargamos la interfaz de Designer
         self.setWindowTitle("Calculadora") # Nombre de la Ventana al abrir la aplicación
-        self.Boton.clicked.connect(self.sumar) # nombre del componente.evento(clicked).connect(self.<funcion>)
+        #self.Boton.clicked.connect(self.sumar) # nombre del componente.evento(clicked).connect(self.<funcion>)
 
 # A partir de aquí se escribe la lógica los componentes de la interfaz
     def sumar(self):

@@ -114,11 +114,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.siete = QPushButton(self.centralwidget)
-        self.siete.setObjectName(u"siete")
-        self.siete.setGeometry(QRect(10, 240, 71, 71))
-        self.siete.setFont(font1)
-        self.siete.setStyleSheet(u"QPushButton {\n"
+        self.Bu7 = QPushButton(self.centralwidget)
+        self.Bu7.setObjectName(u"Bu7")
+        self.Bu7.setGeometry(QRect(10, 240, 71, 71))
+        self.Bu7.setFont(font1)
+        self.Bu7.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -148,11 +148,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.nueve = QPushButton(self.centralwidget)
-        self.nueve.setObjectName(u"nueve")
-        self.nueve.setGeometry(QRect(190, 240, 71, 71))
-        self.nueve.setFont(font1)
-        self.nueve.setStyleSheet(u"QPushButton {\n"
+        self.Bu9 = QPushButton(self.centralwidget)
+        self.Bu9.setObjectName(u"Bu9")
+        self.Bu9.setGeometry(QRect(190, 240, 71, 71))
+        self.Bu9.setFont(font1)
+        self.Bu9.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -165,11 +165,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.ocho = QPushButton(self.centralwidget)
-        self.ocho.setObjectName(u"ocho")
-        self.ocho.setGeometry(QRect(100, 240, 71, 71))
-        self.ocho.setFont(font1)
-        self.ocho.setStyleSheet(u"QPushButton {\n"
+        self.Bu8 = QPushButton(self.centralwidget)
+        self.Bu8.setObjectName(u"Bu8")
+        self.Bu8.setGeometry(QRect(100, 240, 71, 71))
+        self.Bu8.setFont(font1)
+        self.Bu8.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -182,11 +182,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.cinco = QPushButton(self.centralwidget)
-        self.cinco.setObjectName(u"cinco")
-        self.cinco.setGeometry(QRect(100, 330, 71, 71))
-        self.cinco.setFont(font1)
-        self.cinco.setStyleSheet(u"QPushButton {\n"
+        self.Bu5 = QPushButton(self.centralwidget)
+        self.Bu5.setObjectName(u"Bu5")
+        self.Bu5.setGeometry(QRect(100, 330, 71, 71))
+        self.Bu5.setFont(font1)
+        self.Bu5.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -199,11 +199,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.seis = QPushButton(self.centralwidget)
-        self.seis.setObjectName(u"seis")
-        self.seis.setGeometry(QRect(190, 330, 71, 71))
-        self.seis.setFont(font1)
-        self.seis.setStyleSheet(u"QPushButton {\n"
+        self.Bu6 = QPushButton(self.centralwidget)
+        self.Bu6.setObjectName(u"Bu6")
+        self.Bu6.setGeometry(QRect(190, 330, 71, 71))
+        self.Bu6.setFont(font1)
+        self.Bu6.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -238,11 +238,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.cuatro = QPushButton(self.centralwidget)
-        self.cuatro.setObjectName(u"cuatro")
-        self.cuatro.setGeometry(QRect(10, 330, 71, 71))
-        self.cuatro.setFont(font1)
-        self.cuatro.setStyleSheet(u"QPushButton {\n"
+        self.Bu4 = QPushButton(self.centralwidget)
+        self.Bu4.setObjectName(u"Bu4")
+        self.Bu4.setGeometry(QRect(10, 330, 71, 71))
+        self.Bu4.setFont(font1)
+        self.Bu4.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -289,11 +289,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.tres = QPushButton(self.centralwidget)
-        self.tres.setObjectName(u"tres")
-        self.tres.setGeometry(QRect(190, 420, 71, 71))
-        self.tres.setFont(font1)
-        self.tres.setStyleSheet(u"QPushButton {\n"
+        self.Bu3 = QPushButton(self.centralwidget)
+        self.Bu3.setObjectName(u"Bu3")
+        self.Bu3.setGeometry(QRect(190, 420, 71, 71))
+        self.Bu3.setFont(font1)
+        self.Bu3.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -306,11 +306,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.dos = QPushButton(self.centralwidget)
-        self.dos.setObjectName(u"dos")
-        self.dos.setGeometry(QRect(100, 420, 71, 71))
-        self.dos.setFont(font1)
-        self.dos.setStyleSheet(u"QPushButton {\n"
+        self.Bu2 = QPushButton(self.centralwidget)
+        self.Bu2.setObjectName(u"Bu2")
+        self.Bu2.setGeometry(QRect(100, 420, 71, 71))
+        self.Bu2.setFont(font1)
+        self.Bu2.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -374,11 +374,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.dobleCero = QPushButton(self.centralwidget)
-        self.dobleCero.setObjectName(u"dobleCero")
-        self.dobleCero.setGeometry(QRect(10, 510, 71, 71))
-        self.dobleCero.setFont(font1)
-        self.dobleCero.setStyleSheet(u"QPushButton {\n"
+        self.raiz = QPushButton(self.centralwidget)
+        self.raiz.setObjectName(u"raiz")
+        self.raiz.setGeometry(QRect(10, 510, 71, 71))
+        self.raiz.setFont(font1)
+        self.raiz.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -404,21 +404,21 @@ class Ui_MainWindow(object):
         self.porcentaje.setText(QCoreApplication.translate("MainWindow", u"%", None))
         self.delete_2.setText(QCoreApplication.translate("MainWindow", u"<", None))
         self.dividir.setText(QCoreApplication.translate("MainWindow", u"\u00f7", None))
-        self.siete.setText(QCoreApplication.translate("MainWindow", u"7", None))
+        self.Bu7.setText(QCoreApplication.translate("MainWindow", u"7", None))
         self.multi.setText(QCoreApplication.translate("MainWindow", u"X", None))
-        self.nueve.setText(QCoreApplication.translate("MainWindow", u"9", None))
-        self.ocho.setText(QCoreApplication.translate("MainWindow", u"8", None))
-        self.cinco.setText(QCoreApplication.translate("MainWindow", u"5", None))
-        self.seis.setText(QCoreApplication.translate("MainWindow", u"6", None))
+        self.Bu9.setText(QCoreApplication.translate("MainWindow", u"9", None))
+        self.Bu8.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.Bu5.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.Bu6.setText(QCoreApplication.translate("MainWindow", u"6", None))
         self.restar.setText(QCoreApplication.translate("MainWindow", u"-", None))
-        self.cuatro.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.Bu4.setText(QCoreApplication.translate("MainWindow", u"4", None))
         self.sumar.setText(QCoreApplication.translate("MainWindow", u"+", None))
         self.Bu1.setText(QCoreApplication.translate("MainWindow", u"1", None))
-        self.tres.setText(QCoreApplication.translate("MainWindow", u"3", None))
-        self.dos.setText(QCoreApplication.translate("MainWindow", u"2", None))
+        self.Bu3.setText(QCoreApplication.translate("MainWindow", u"3", None))
+        self.Bu2.setText(QCoreApplication.translate("MainWindow", u"2", None))
         self.igual.setText(QCoreApplication.translate("MainWindow", u"=", None))
         self.cero.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.coma.setText(QCoreApplication.translate("MainWindow", u",", None))
-        self.dobleCero.setText(QCoreApplication.translate("MainWindow", u"00", None))
+        self.raiz.setText(QCoreApplication.translate("MainWindow", u"\u221a", None))
     # retranslateUi
 
