@@ -17,9 +17,10 @@ class pantalla(QMainWindow): # Se crea una clase por ventana
         for i in range(10):
             getattr(self, f'Bu{i}').clicked.connect(lambda _, num=i: self.pulsar_numero(num))
 
-        self.Bt_doble.clicked.connect(lambda: self.pulsar_numero(00))
         self.Bt_coma.clicked.connect(lambda: self.pulsar_operador("."))
         self.Bt_raiz.clicked.connect(lambda: self.pulsar_operador("√"))
+        self.Bt_cos.clicked.connect(lambda: self.pulsar_operador("cos"))
+        self.Bt_sen.clicked.connect(lambda: self.pulsar_operador("sen"))
         self.Bt_multi.clicked.connect(lambda: self.pulsar_operador("*"))
         self.Bt_sumar.clicked.connect(lambda: self.pulsar_operador("+"))
         self.Bt_restar.clicked.connect(lambda: self.pulsar_operador("-"))
@@ -41,7 +42,7 @@ class pantalla(QMainWindow): # Se crea una clase por ventana
 
 
     def pulsar_operador(self, operador):
-        if self.expresion and self.expresion[-1] not in "+-*/" or operador in ["(", ")", "√"]:
+        if self.expresion and self.expresion[-1] not in "+-*/" or operador in ["(", ")", "√", "sen", "cos"]:
             self.expresion += operador
             self.actualizar_pantalla()
 
@@ -51,13 +52,15 @@ class pantalla(QMainWindow): # Se crea una clase por ventana
             expresion = self.expresion
             expresion = expresion.replace("%", "/100")
             expresion = re.sub(r'√(\d+)', r'math.sqrt(\1)', expresion)
+            expresion = re.sub(r'sen(\d+)', r'math.sin(\1)', expresion)
+            expresion = re.sub(r'cos(\d+)', r'math.cos(\1)', expresion)
             if (len(self.expresion) > 1):
                 resultado = eval(expresion, {"math": math})
                 self.Le_pantalla.setText(str(resultado))
                 self.agregar_historial(self.expresion, str(resultado))
                 self.expresion = str(resultado)
         except:
-            self.Le_pantalla.setText("Err")
+            self.Le_pantalla.setText("SyntaxError")
             self.expresion = ""
 
 

@@ -10,6 +10,11 @@
     <height>597</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Verdana</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -19,7 +24,7 @@
 background-color:rgb(255, 224, 225)</string>
   </property>
   <property name="toolButtonStyle">
-   <enum>Qt::ToolButtonIconOnly</enum>
+   <enum>Qt::ToolButtonStyle::ToolButtonIconOnly</enum>
   </property>
   <widget class="QWidget" name="Botones">
    <widget class="QLCDNumber" name="LcdNumber">
@@ -50,10 +55,10 @@ background-color:rgb(255, 224, 225)</string>
      </font>
     </property>
     <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
+     <enum>QFrame::Shape::StyledPanel</enum>
     </property>
     <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
+     <enum>QFrame::Shadow::Plain</enum>
     </property>
    </widget>
    <widget class="QPushButton" name="Bt_borrar">
@@ -740,49 +745,13 @@ font-family:Vrinda;
      <string>,</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bt_doble">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>510</y>
-      <width>71</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Vrinda</family>
-      <pointsize>22</pointsize>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-color: white;
-background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));
-border-width: 1px;
-border-color: #339;
-border-style: solid;
-border-radius: 12;
-padding: 3px;
-padding-left: 5px;
-padding-right: 5px;
-font:bold;
-font-family:Vrinda;
-}</string>
-    </property>
-    <property name="text">
-     <string>00</string>
-    </property>
-   </widget>
    <widget class="QTableWidget" name="Ta_Historial">
     <property name="geometry">
      <rect>
       <x>460</x>
       <y>10</y>
       <width>201</width>
-      <height>561</height>
+      <height>571</height>
      </rect>
     </property>
     <property name="font">
@@ -792,7 +761,7 @@ font-family:Vrinda;
      </font>
     </property>
     <property name="horizontalScrollBarPolicy">
-     <enum>Qt::ScrollBarAlwaysOff</enum>
+     <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
     </property>
     <property name="rowCount">
      <number>0</number>
@@ -912,9 +881,9 @@ font-family:Vrinda;
    <widget class="QLineEdit" name="Le_pantalla">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>10</y>
-      <width>411</width>
+      <width>431</width>
       <height>111</height>
      </rect>
     </property>
@@ -924,10 +893,10 @@ font-family:Vrinda;
      </font>
     </property>
     <property name="text">
-     <string/>
+     <string>0</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
     </property>
     <property name="placeholderText">
      <string>0</string>
@@ -936,8 +905,44 @@ font-family:Vrinda;
    <widget class="QPushButton" name="Bt_raiz">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>240</y>
+      <x>10</x>
+      <y>510</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Vrinda</family>
+      <pointsize>22</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: white;
+background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 12;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+font:bold;
+font-family:Vrinda;
+}</string>
+    </property>
+    <property name="text">
+     <string>√</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bt_papelera">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>500</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -966,10 +971,10 @@ font-family:Vrinda;
 }</string>
     </property>
     <property name="text">
-     <string>√</string>
+     <string>🗑</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bt_papelera">
+   <widget class="QPushButton" name="Bt_sen">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -1002,7 +1007,43 @@ font-family:Vrinda;
 }</string>
     </property>
     <property name="text">
-     <string>🗑</string>
+     <string>sen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bt_cos">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>240</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Vrinda</family>
+      <pointsize>22</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: white;
+background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius:35;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+font:bold;
+font-family:Vrinda;
+}</string>
+    </property>
+    <property name="text">
+     <string>cos</string>
     </property>
    </widget>
   </widget>
