@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'calculadora.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.8.1
+## Created by: Qt User Interface Compiler version 6.8.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -15,28 +15,36 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QHeaderView, QLCDNumber, QMainWindow,
-    QPushButton, QSizePolicy, QTableWidget, QTableWidgetItem,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QFrame, QHeaderView, QLCDNumber,
+    QLineEdit, QMainWindow, QPushButton, QSizePolicy,
+    QTableWidget, QTableWidgetItem, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(452, 597)
+        MainWindow.resize(678, 597)
         MainWindow.setStyleSheet(u"\n"
 "\n"
 "background-color:rgb(255, 224, 225)")
-        MainWindow.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextBesideIcon)
+        MainWindow.setToolButtonStyle(Qt.ToolButtonIconOnly)
         self.Botones = QWidget(MainWindow)
         self.Botones.setObjectName(u"Botones")
         self.LcdNumber = QLCDNumber(self.Botones)
         self.LcdNumber.setObjectName(u"LcdNumber")
-        self.LcdNumber.setGeometry(QRect(10, 10, 341, 121))
-        self.LcdNumber.setMaximumSize(QSize(341, 16777215))
+        self.LcdNumber.setGeometry(QRect(20, 10, 411, 111))
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.LcdNumber.sizePolicy().hasHeightForWidth())
+        self.LcdNumber.setSizePolicy(sizePolicy)
+        self.LcdNumber.setMaximumSize(QSize(543, 16777215))
         font = QFont()
         font.setFamilies([u"Segoe UI"])
+        font.setPointSize(5)
         self.LcdNumber.setFont(font)
+        self.LcdNumber.setFrameShape(QFrame.StyledPanel)
+        self.LcdNumber.setFrameShadow(QFrame.Plain)
         self.Bt_borrar = QPushButton(self.Botones)
         self.Bt_borrar.setObjectName(u"Bt_borrar")
         self.Bt_borrar.setGeometry(QRect(10, 150, 71, 71))
@@ -76,11 +84,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.delete_2 = QPushButton(self.Botones)
-        self.delete_2.setObjectName(u"delete_2")
-        self.delete_2.setGeometry(QRect(190, 150, 71, 71))
-        self.delete_2.setFont(font1)
-        self.delete_2.setStyleSheet(u"QPushButton {\n"
+        self.Bt_delete = QPushButton(self.Botones)
+        self.Bt_delete.setObjectName(u"Bt_delete")
+        self.Bt_delete.setGeometry(QRect(190, 150, 71, 71))
+        self.Bt_delete.setFont(font1)
+        self.Bt_delete.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -394,12 +402,19 @@ class Ui_MainWindow(object):
 "}")
         self.Ta_Historial = QTableWidget(self.Botones)
         self.Ta_Historial.setObjectName(u"Ta_Historial")
-        self.Ta_Historial.setGeometry(QRect(470, 10, 256, 561))
-        self.igual_2 = QPushButton(self.Botones)
-        self.igual_2.setObjectName(u"igual_2")
-        self.igual_2.setGeometry(QRect(370, 510, 71, 71))
-        self.igual_2.setFont(font1)
-        self.igual_2.setStyleSheet(u"QPushButton {\n"
+        self.Ta_Historial.setGeometry(QRect(460, 10, 201, 561))
+        font4 = QFont()
+        font4.setBold(False)
+        font4.setStyleStrategy(QFont.PreferDefault)
+        self.Ta_Historial.setFont(font4)
+        self.Ta_Historial.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.Ta_Historial.setRowCount(0)
+        self.Ta_Historial.setColumnCount(0)
+        self.Bt_paren1 = QPushButton(self.Botones)
+        self.Bt_paren1.setObjectName(u"Bt_paren1")
+        self.Bt_paren1.setGeometry(QRect(370, 510, 71, 71))
+        self.Bt_paren1.setFont(font1)
+        self.Bt_paren1.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -412,11 +427,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.igual_3 = QPushButton(self.Botones)
-        self.igual_3.setObjectName(u"igual_3")
-        self.igual_3.setGeometry(QRect(370, 420, 71, 71))
-        self.igual_3.setFont(font1)
-        self.igual_3.setStyleSheet(u"QPushButton {\n"
+        self.Bt_paren2 = QPushButton(self.Botones)
+        self.Bt_paren2.setObjectName(u"Bt_paren2")
+        self.Bt_paren2.setGeometry(QRect(370, 330, 71, 71))
+        self.Bt_paren2.setFont(font1)
+        self.Bt_paren2.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -429,11 +444,11 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.restar_2 = QPushButton(self.Botones)
-        self.restar_2.setObjectName(u"restar_2")
-        self.restar_2.setGeometry(QRect(370, 330, 71, 71))
-        self.restar_2.setFont(font3)
-        self.restar_2.setStyleSheet(u"QPushButton {\n"
+        self.Bt_elevar = QPushButton(self.Botones)
+        self.Bt_elevar.setObjectName(u"Bt_elevar")
+        self.Bt_elevar.setGeometry(QRect(370, 150, 71, 71))
+        self.Bt_elevar.setFont(font3)
+        self.Bt_elevar.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
 "border-width: 1px;\n"
@@ -446,57 +461,13 @@ class Ui_MainWindow(object):
 "font:bold;\n"
 "font-family:Vrinda;\n"
 "}")
-        self.dividir_2 = QPushButton(self.Botones)
-        self.dividir_2.setObjectName(u"dividir_2")
-        self.dividir_2.setGeometry(QRect(370, 150, 71, 71))
-        self.dividir_2.setFont(font2)
-        self.dividir_2.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
-"border-width: 1px;\n"
-"border-color: #339;\n"
-"border-style: solid;\n"
-"border-radius: 35;;\n"
-"padding: 3px;\n"
-"padding-left: 5px;\n"
-"padding-right: 5px;\n"
-"font:bold;\n"
-"font-family:Vrinda;\n"
-"}")
-        self.multi_2 = QPushButton(self.Botones)
-        self.multi_2.setObjectName(u"multi_2")
-        self.multi_2.setGeometry(QRect(370, 240, 71, 71))
-        self.multi_2.setFont(font1)
-        self.multi_2.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
-"border-width: 1px;\n"
-"border-color: #339;\n"
-"border-style: solid;\n"
-"border-radius: 35;\n"
-"padding: 3px;\n"
-"padding-left: 5px;\n"
-"padding-right: 5px;\n"
-"font:bold;\n"
-"font-family:Vrinda;\n"
-"}")
-        self.dividir_3 = QPushButton(self.Botones)
-        self.dividir_3.setObjectName(u"dividir_3")
-        self.dividir_3.setGeometry(QRect(370, 40, 71, 71))
-        self.dividir_3.setFont(font2)
-        self.dividir_3.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
-"border-width: 1px;\n"
-"border-color: #339;\n"
-"border-style: solid;\n"
-"border-radius: 35;;\n"
-"padding: 3px;\n"
-"padding-left: 5px;\n"
-"padding-right: 5px;\n"
-"font:bold;\n"
-"font-family:Vrinda;\n"
-"}")
+        self.Le_pantalla = QLineEdit(self.Botones)
+        self.Le_pantalla.setObjectName(u"Le_pantalla")
+        self.Le_pantalla.setGeometry(QRect(20, 10, 411, 111))
+        font5 = QFont()
+        font5.setPointSize(80)
+        self.Le_pantalla.setFont(font5)
+        self.Le_pantalla.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
         MainWindow.setCentralWidget(self.Botones)
 
         self.retranslateUi(MainWindow)
@@ -508,7 +479,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.Bt_borrar.setText(QCoreApplication.translate("MainWindow", u"AC", None))
         self.Bt_porcentaje.setText(QCoreApplication.translate("MainWindow", u"%", None))
-        self.delete_2.setText(QCoreApplication.translate("MainWindow", u"<", None))
+        self.Bt_delete.setText(QCoreApplication.translate("MainWindow", u"<", None))
         self.Bt_dividir.setText(QCoreApplication.translate("MainWindow", u"\u00f7", None))
         self.Bu7.setText(QCoreApplication.translate("MainWindow", u"7", None))
         self.Bt_multi.setText(QCoreApplication.translate("MainWindow", u"X", None))
@@ -526,11 +497,10 @@ class Ui_MainWindow(object):
         self.Bu0.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.Bt_coma.setText(QCoreApplication.translate("MainWindow", u",", None))
         self.Bt_raiz.setText(QCoreApplication.translate("MainWindow", u"\u221a", None))
-        self.igual_2.setText(QCoreApplication.translate("MainWindow", u"=", None))
-        self.igual_3.setText(QCoreApplication.translate("MainWindow", u"=", None))
-        self.restar_2.setText(QCoreApplication.translate("MainWindow", u"-", None))
-        self.dividir_2.setText(QCoreApplication.translate("MainWindow", u"\u00f7", None))
-        self.multi_2.setText(QCoreApplication.translate("MainWindow", u"X", None))
-        self.dividir_3.setText(QCoreApplication.translate("MainWindow", u"H", None))
+        self.Bt_paren1.setText(QCoreApplication.translate("MainWindow", u"(", None))
+        self.Bt_paren2.setText(QCoreApplication.translate("MainWindow", u")", None))
+        self.Bt_elevar.setText(QCoreApplication.translate("MainWindow", u"^", None))
+        self.Le_pantalla.setText("")
+        self.Le_pantalla.setPlaceholderText(QCoreApplication.translate("MainWindow", u"0", None))
     # retranslateUi
 
