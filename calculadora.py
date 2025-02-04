@@ -17,6 +17,7 @@ class pantalla(QMainWindow): # Se crea una clase por ventana
         for i in range(10):
             getattr(self, f'Bu{i}').clicked.connect(lambda _, num=i: self.pulsar_numero(num))
 
+        self.Bt_doble.clicked.connect(lambda: self.pulsar_numero(00))
         self.Bt_coma.clicked.connect(lambda: self.pulsar_operador("."))
         self.Bt_raiz.clicked.connect(lambda: self.pulsar_operador("√"))
         self.Bt_multi.clicked.connect(lambda: self.pulsar_operador("*"))
@@ -31,6 +32,7 @@ class pantalla(QMainWindow): # Se crea una clase por ventana
         self.Bt_borrar.clicked.connect(self.borrar_todo)
         self.Bt_delete.clicked.connect(self.borrar_ultimo)
         self.Bt_igual.clicked.connect(self.calcular_resultado)
+        self.Bt_papelera.clicked.connect(self.borrar_historial)
 
 
     def pulsar_numero(self, num):
@@ -47,8 +49,8 @@ class pantalla(QMainWindow): # Se crea una clase por ventana
     def calcular_resultado(self):
         try:
             expresion = self.expresion
-            expresion = self.expresion.replace("%", "/100")
-            expresion = re.sub(r'√(\d+)', r'math.sqrt(\1)', self.expresion)
+            expresion = expresion.replace("%", "/100")
+            expresion = re.sub(r'√(\d+)', r'math.sqrt(\1)', expresion)
             if (len(self.expresion) > 1):
                 resultado = eval(expresion, {"math": math})
                 self.Le_pantalla.setText(str(resultado))
@@ -79,6 +81,10 @@ class pantalla(QMainWindow): # Se crea una clase por ventana
         self.Ta_Historial.insertRow(row_count)
         self.Ta_Historial.setItem(row_count, 0, QTableWidgetItem(expresion))
         self.Ta_Historial.setItem(row_count, 1, QTableWidgetItem(str(resultado)))
+
+    def borrar_historial(self):
+        while self.Ta_Historial.rowCount() > 0:
+            self.Ta_Historial.removeRow(0)
 
 
 if __name__ == '__main__':

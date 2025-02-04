@@ -161,7 +161,7 @@ font-family:Vrinda;
 }</string>
     </property>
     <property name="text">
-     <string>&lt;</string>
+     <string>⌫</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Bt_dividir">
@@ -740,7 +740,7 @@ font-family:Vrinda;
      <string>,</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bt_raiz">
+   <widget class="QPushButton" name="Bt_doble">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -773,7 +773,7 @@ font-family:Vrinda;
 }</string>
     </property>
     <property name="text">
-     <string>√</string>
+     <string>00</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="Ta_Historial">
@@ -841,7 +841,7 @@ font-family:Vrinda;
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>330</y>
+      <y>420</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -877,7 +877,7 @@ font-family:Vrinda;
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>150</y>
+      <y>330</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -931,6 +931,78 @@ font-family:Vrinda;
     </property>
     <property name="placeholderText">
      <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bt_raiz">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>240</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Vrinda</family>
+      <pointsize>22</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: white;
+background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius:35;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+font:bold;
+font-family:Vrinda;
+}</string>
+    </property>
+    <property name="text">
+     <string>√</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bt_papelera">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>150</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Vrinda</family>
+      <pointsize>22</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: white;
+background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius:35;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+font:bold;
+font-family:Vrinda;
+}</string>
+    </property>
+    <property name="text">
+     <string>🗑</string>
     </property>
    </widget>
   </widget>
