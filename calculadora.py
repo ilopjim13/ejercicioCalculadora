@@ -80,6 +80,7 @@ class pantalla(QMainWindow): # Se crea una clase por ventana
 
     def agregar_historial(self, expresion, resultado):
         self.Ta_Historial.setColumnCount(2)
+        self.Ta_Historial.setHorizontalHeaderLabels(["Operación", "Resultado"])
         row_count = self.Ta_Historial.rowCount()
         self.Ta_Historial.insertRow(row_count)
         self.Ta_Historial.setItem(row_count, 0, QTableWidgetItem(expresion))

@@ -29,7 +29,7 @@ class Ui_MainWindow(object):
         MainWindow.setFont(font)
         MainWindow.setStyleSheet(u"\n"
 "\n"
-"background-color:rgb(255, 224, 225)")
+"background-color:rgb(0, 0, 0)")
         MainWindow.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonIconOnly)
         self.Botones = QWidget(MainWindow)
         self.Botones.setObjectName(u"Botones")
@@ -58,8 +58,8 @@ class Ui_MainWindow(object):
         font2.setItalic(False)
         self.Bt_borrar.setFont(font2)
         self.Bt_borrar.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(197, 255, 253);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
@@ -72,15 +72,15 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_porcentaje = QPushButton(self.Botones)
         self.Bt_porcentaje.setObjectName(u"Bt_porcentaje")
-        self.Bt_porcentaje.setGeometry(QRect(100, 150, 71, 71))
+        self.Bt_porcentaje.setGeometry(QRect(190, 150, 71, 71))
         self.Bt_porcentaje.setFont(font2)
         self.Bt_porcentaje.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
-"border-radius: 35;;\n"
+"border-radius: 35;\n"
 "padding: 3px;\n"
 "padding-left: 5px;\n"
 "padding-right: 5px;\n"
@@ -89,15 +89,15 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_delete = QPushButton(self.Botones)
         self.Bt_delete.setObjectName(u"Bt_delete")
-        self.Bt_delete.setGeometry(QRect(190, 150, 71, 71))
+        self.Bt_delete.setGeometry(QRect(280, 150, 71, 71))
         self.Bt_delete.setFont(font2)
         self.Bt_delete.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
-"border-radius: 35;;\n"
+"border-radius: 35;\n"
 "padding: 3px;\n"
 "padding-left: 5px;\n"
 "padding-right: 5px;\n"
@@ -106,7 +106,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_dividir = QPushButton(self.Botones)
         self.Bt_dividir.setObjectName(u"Bt_dividir")
-        self.Bt_dividir.setGeometry(QRect(280, 150, 71, 71))
+        self.Bt_dividir.setGeometry(QRect(370, 150, 71, 71))
         font3 = QFont()
         font3.setFamilies([u"Vrinda"])
         font3.setPointSize(25)
@@ -114,12 +114,12 @@ class Ui_MainWindow(object):
         font3.setItalic(False)
         self.Bt_dividir.setFont(font3)
         self.Bt_dividir.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
-"border-radius: 35;;\n"
+"border-radius: 35;\n"
 "padding: 3px;\n"
 "padding-left: 5px;\n"
 "padding-right: 5px;\n"
@@ -128,7 +128,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu7 = QPushButton(self.Botones)
         self.Bu7.setObjectName(u"Bu7")
-        self.Bu7.setGeometry(QRect(10, 240, 71, 71))
+        self.Bu7.setGeometry(QRect(100, 240, 71, 71))
         self.Bu7.setFont(font2)
         self.Bu7.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -145,11 +145,11 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_multi = QPushButton(self.Botones)
         self.Bt_multi.setObjectName(u"Bt_multi")
-        self.Bt_multi.setGeometry(QRect(280, 240, 71, 71))
+        self.Bt_multi.setGeometry(QRect(370, 240, 71, 71))
         self.Bt_multi.setFont(font2)
         self.Bt_multi.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu9 = QPushButton(self.Botones)
         self.Bu9.setObjectName(u"Bu9")
-        self.Bu9.setGeometry(QRect(190, 240, 71, 71))
+        self.Bu9.setGeometry(QRect(280, 240, 71, 71))
         self.Bu9.setFont(font2)
         self.Bu9.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -179,7 +179,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu8 = QPushButton(self.Botones)
         self.Bu8.setObjectName(u"Bu8")
-        self.Bu8.setGeometry(QRect(100, 240, 71, 71))
+        self.Bu8.setGeometry(QRect(190, 240, 71, 71))
         self.Bu8.setFont(font2)
         self.Bu8.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -196,7 +196,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu5 = QPushButton(self.Botones)
         self.Bu5.setObjectName(u"Bu5")
-        self.Bu5.setGeometry(QRect(100, 330, 71, 71))
+        self.Bu5.setGeometry(QRect(190, 330, 71, 71))
         self.Bu5.setFont(font2)
         self.Bu5.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -213,7 +213,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu6 = QPushButton(self.Botones)
         self.Bu6.setObjectName(u"Bu6")
-        self.Bu6.setGeometry(QRect(190, 330, 71, 71))
+        self.Bu6.setGeometry(QRect(280, 330, 71, 71))
         self.Bu6.setFont(font2)
         self.Bu6.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -230,7 +230,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_restar = QPushButton(self.Botones)
         self.Bt_restar.setObjectName(u"Bt_restar")
-        self.Bt_restar.setGeometry(QRect(280, 330, 71, 71))
+        self.Bt_restar.setGeometry(QRect(370, 330, 71, 71))
         font4 = QFont()
         font4.setFamilies([u"Vrinda"])
         font4.setPointSize(30)
@@ -238,12 +238,12 @@ class Ui_MainWindow(object):
         font4.setItalic(False)
         self.Bt_restar.setFont(font4)
         self.Bt_restar.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
-"border-radius:35;\n"
+"border-radius: 35;\n"
 "padding: 3px;\n"
 "padding-left: 5px;\n"
 "padding-right: 5px;\n"
@@ -252,7 +252,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu4 = QPushButton(self.Botones)
         self.Bu4.setObjectName(u"Bu4")
-        self.Bu4.setGeometry(QRect(10, 330, 71, 71))
+        self.Bu4.setGeometry(QRect(100, 330, 71, 71))
         self.Bu4.setFont(font2)
         self.Bu4.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -269,11 +269,11 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_sumar = QPushButton(self.Botones)
         self.Bt_sumar.setObjectName(u"Bt_sumar")
-        self.Bt_sumar.setGeometry(QRect(280, 420, 71, 71))
+        self.Bt_sumar.setGeometry(QRect(370, 420, 71, 71))
         self.Bt_sumar.setFont(font2)
         self.Bt_sumar.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
@@ -286,7 +286,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu1 = QPushButton(self.Botones)
         self.Bu1.setObjectName(u"Bu1")
-        self.Bu1.setGeometry(QRect(10, 420, 71, 71))
+        self.Bu1.setGeometry(QRect(100, 420, 71, 71))
         self.Bu1.setFont(font2)
         self.Bu1.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -303,7 +303,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu3 = QPushButton(self.Botones)
         self.Bu3.setObjectName(u"Bu3")
-        self.Bu3.setGeometry(QRect(190, 420, 71, 71))
+        self.Bu3.setGeometry(QRect(280, 420, 71, 71))
         self.Bu3.setFont(font2)
         self.Bu3.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -320,7 +320,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu2 = QPushButton(self.Botones)
         self.Bu2.setObjectName(u"Bu2")
-        self.Bu2.setGeometry(QRect(100, 420, 71, 71))
+        self.Bu2.setGeometry(QRect(190, 420, 71, 71))
         self.Bu2.setFont(font2)
         self.Bu2.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -337,11 +337,11 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_igual = QPushButton(self.Botones)
         self.Bt_igual.setObjectName(u"Bt_igual")
-        self.Bt_igual.setGeometry(QRect(280, 510, 71, 71))
+        self.Bt_igual.setGeometry(QRect(370, 510, 71, 71))
         self.Bt_igual.setFont(font2)
         self.Bt_igual.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 170, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
@@ -354,7 +354,7 @@ class Ui_MainWindow(object):
 "}")
         self.Bu0 = QPushButton(self.Botones)
         self.Bu0.setObjectName(u"Bu0")
-        self.Bu0.setGeometry(QRect(100, 510, 71, 71))
+        self.Bu0.setGeometry(QRect(190, 510, 71, 71))
         self.Bu0.setFont(font2)
         self.Bu0.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
@@ -371,11 +371,11 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_coma = QPushButton(self.Botones)
         self.Bt_coma.setObjectName(u"Bt_coma")
-        self.Bt_coma.setGeometry(QRect(190, 510, 71, 71))
+        self.Bt_coma.setGeometry(QRect(280, 510, 71, 71))
         self.Bt_coma.setFont(font2)
         self.Bt_coma.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
@@ -393,16 +393,38 @@ class Ui_MainWindow(object):
         font5.setBold(False)
         font5.setStyleStrategy(QFont.PreferDefault)
         self.Ta_Historial.setFont(font5)
+        self.Ta_Historial.setStyleSheet(u"QTableView {\n"
+"    gridline-color: white;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: white;\n"
+"    color: black;\n"
+"	text-align: center;\n"
+"}\n"
+"\n"
+"QTableView::item {\n"
+"    color: white; \n"
+"	text-align: center;\n"
+"}\n"
+"\n"
+"QTableView::item[id=\"your-id-here\"] {\n"
+"    color: white;\n"
+"	text-align: center;\n"
+"}\n"
+"")
         self.Ta_Historial.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.Ta_Historial.setRowCount(0)
         self.Ta_Historial.setColumnCount(0)
+        self.Ta_Historial.horizontalHeader().setStretchLastSection(False)
+        self.Ta_Historial.verticalHeader().setStretchLastSection(False)
         self.Bt_paren1 = QPushButton(self.Botones)
         self.Bt_paren1.setObjectName(u"Bt_paren1")
-        self.Bt_paren1.setGeometry(QRect(370, 510, 71, 71))
+        self.Bt_paren1.setGeometry(QRect(10, 510, 71, 71))
         self.Bt_paren1.setFont(font2)
         self.Bt_paren1.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
@@ -415,11 +437,11 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_paren2 = QPushButton(self.Botones)
         self.Bt_paren2.setObjectName(u"Bt_paren2")
-        self.Bt_paren2.setGeometry(QRect(370, 420, 71, 71))
+        self.Bt_paren2.setGeometry(QRect(10, 420, 71, 71))
         self.Bt_paren2.setFont(font2)
         self.Bt_paren2.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
@@ -432,15 +454,15 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_elevar = QPushButton(self.Botones)
         self.Bt_elevar.setObjectName(u"Bt_elevar")
-        self.Bt_elevar.setGeometry(QRect(370, 330, 71, 71))
+        self.Bt_elevar.setGeometry(QRect(100, 150, 71, 71))
         self.Bt_elevar.setFont(font4)
         self.Bt_elevar.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
-"border-radius:35;\n"
+"border-radius: 35;\n"
 "padding: 3px;\n"
 "padding-left: 5px;\n"
 "padding-right: 5px;\n"
@@ -451,16 +473,17 @@ class Ui_MainWindow(object):
         self.Le_pantalla.setObjectName(u"Le_pantalla")
         self.Le_pantalla.setGeometry(QRect(10, 10, 431, 111))
         font6 = QFont()
-        font6.setPointSize(80)
+        font6.setPointSize(60)
         self.Le_pantalla.setFont(font6)
+        self.Le_pantalla.setStyleSheet(u"color:rgb(255, 255, 255);")
         self.Le_pantalla.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
         self.Bt_raiz = QPushButton(self.Botones)
         self.Bt_raiz.setObjectName(u"Bt_raiz")
-        self.Bt_raiz.setGeometry(QRect(10, 510, 71, 71))
+        self.Bt_raiz.setGeometry(QRect(100, 510, 71, 71))
         self.Bt_raiz.setFont(font2)
         self.Bt_raiz.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
@@ -476,12 +499,12 @@ class Ui_MainWindow(object):
         self.Bt_papelera.setGeometry(QRect(580, 500, 71, 71))
         self.Bt_papelera.setFont(font2)
         self.Bt_papelera.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
-"border-radius:35;\n"
+"border-radius: 35;\n"
 "padding: 3px;\n"
 "padding-left: 5px;\n"
 "padding-right: 5px;\n"
@@ -490,15 +513,15 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_sen = QPushButton(self.Botones)
         self.Bt_sen.setObjectName(u"Bt_sen")
-        self.Bt_sen.setGeometry(QRect(370, 150, 71, 71))
+        self.Bt_sen.setGeometry(QRect(10, 330, 71, 71))
         self.Bt_sen.setFont(font2)
         self.Bt_sen.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
-"border-radius:35;\n"
+"border-radius: 35;\n"
 "padding: 3px;\n"
 "padding-left: 5px;\n"
 "padding-right: 5px;\n"
@@ -507,15 +530,15 @@ class Ui_MainWindow(object):
 "}")
         self.Bt_cos = QPushButton(self.Botones)
         self.Bt_cos.setObjectName(u"Bt_cos")
-        self.Bt_cos.setGeometry(QRect(370, 240, 71, 71))
+        self.Bt_cos.setGeometry(QRect(10, 240, 71, 71))
         self.Bt_cos.setFont(font2)
         self.Bt_cos.setStyleSheet(u"QPushButton {\n"
-"color: white;\n"
-"background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
+"color: black;\n"
+"background-color: rgb(85, 85, 255);\n"
 "border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
-"border-radius:35;\n"
+"border-radius: 35;\n"
 "padding: 3px;\n"
 "padding-left: 5px;\n"
 "padding-right: 5px;\n"
