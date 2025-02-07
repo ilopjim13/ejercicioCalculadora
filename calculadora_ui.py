@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'calculadora.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.8.1
+## Created by: Qt User Interface Compiler version 6.8.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -15,9 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QHeaderView, QLCDNumber,
-    QLineEdit, QMainWindow, QPushButton, QSizePolicy,
-    QTableWidget, QTableWidgetItem, QWidget)
+from PySide6.QtWidgets import (QApplication, QHeaderView, QLineEdit, QMainWindow,
+    QPushButton, QSizePolicy, QTableWidget, QTableWidgetItem,
+    QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -30,37 +30,21 @@ class Ui_MainWindow(object):
         MainWindow.setStyleSheet(u"\n"
 "\n"
 "background-color:rgb(0, 0, 0)")
-        MainWindow.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonIconOnly)
+        MainWindow.setToolButtonStyle(Qt.ToolButtonIconOnly)
         self.Botones = QWidget(MainWindow)
         self.Botones.setObjectName(u"Botones")
-        self.LcdNumber = QLCDNumber(self.Botones)
-        self.LcdNumber.setObjectName(u"LcdNumber")
-        self.LcdNumber.setGeometry(QRect(20, 10, 411, 111))
-        sizePolicy = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.LcdNumber.sizePolicy().hasHeightForWidth())
-        self.LcdNumber.setSizePolicy(sizePolicy)
-        self.LcdNumber.setMaximumSize(QSize(543, 16777215))
-        font1 = QFont()
-        font1.setFamilies([u"Segoe UI"])
-        font1.setPointSize(5)
-        self.LcdNumber.setFont(font1)
-        self.LcdNumber.setFrameShape(QFrame.Shape.StyledPanel)
-        self.LcdNumber.setFrameShadow(QFrame.Shadow.Plain)
         self.Bt_borrar = QPushButton(self.Botones)
         self.Bt_borrar.setObjectName(u"Bt_borrar")
         self.Bt_borrar.setGeometry(QRect(10, 150, 71, 71))
-        font2 = QFont()
-        font2.setFamilies([u"Vrinda"])
-        font2.setPointSize(22)
-        font2.setBold(True)
-        font2.setItalic(False)
-        self.Bt_borrar.setFont(font2)
+        font1 = QFont()
+        font1.setFamilies([u"Vrinda"])
+        font1.setPointSize(22)
+        font1.setBold(True)
+        font1.setItalic(False)
+        self.Bt_borrar.setFont(font1)
         self.Bt_borrar.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(197, 255, 253);\n"
-"border-width: 1px;\n"
 "border-color: #339;\n"
 "border-style: solid;\n"
 "border-radius: 35;\n"
@@ -73,7 +57,7 @@ class Ui_MainWindow(object):
         self.Bt_porcentaje = QPushButton(self.Botones)
         self.Bt_porcentaje.setObjectName(u"Bt_porcentaje")
         self.Bt_porcentaje.setGeometry(QRect(190, 150, 71, 71))
-        self.Bt_porcentaje.setFont(font2)
+        self.Bt_porcentaje.setFont(font1)
         self.Bt_porcentaje.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -90,7 +74,7 @@ class Ui_MainWindow(object):
         self.Bt_delete = QPushButton(self.Botones)
         self.Bt_delete.setObjectName(u"Bt_delete")
         self.Bt_delete.setGeometry(QRect(280, 150, 71, 71))
-        self.Bt_delete.setFont(font2)
+        self.Bt_delete.setFont(font1)
         self.Bt_delete.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -107,12 +91,12 @@ class Ui_MainWindow(object):
         self.Bt_dividir = QPushButton(self.Botones)
         self.Bt_dividir.setObjectName(u"Bt_dividir")
         self.Bt_dividir.setGeometry(QRect(370, 150, 71, 71))
-        font3 = QFont()
-        font3.setFamilies([u"Vrinda"])
-        font3.setPointSize(25)
-        font3.setBold(True)
-        font3.setItalic(False)
-        self.Bt_dividir.setFont(font3)
+        font2 = QFont()
+        font2.setFamilies([u"Vrinda"])
+        font2.setPointSize(25)
+        font2.setBold(True)
+        font2.setItalic(False)
+        self.Bt_dividir.setFont(font2)
         self.Bt_dividir.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -129,7 +113,7 @@ class Ui_MainWindow(object):
         self.Bu7 = QPushButton(self.Botones)
         self.Bu7.setObjectName(u"Bu7")
         self.Bu7.setGeometry(QRect(100, 240, 71, 71))
-        self.Bu7.setFont(font2)
+        self.Bu7.setFont(font1)
         self.Bu7.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -146,7 +130,7 @@ class Ui_MainWindow(object):
         self.Bt_multi = QPushButton(self.Botones)
         self.Bt_multi.setObjectName(u"Bt_multi")
         self.Bt_multi.setGeometry(QRect(370, 240, 71, 71))
-        self.Bt_multi.setFont(font2)
+        self.Bt_multi.setFont(font1)
         self.Bt_multi.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -163,7 +147,7 @@ class Ui_MainWindow(object):
         self.Bu9 = QPushButton(self.Botones)
         self.Bu9.setObjectName(u"Bu9")
         self.Bu9.setGeometry(QRect(280, 240, 71, 71))
-        self.Bu9.setFont(font2)
+        self.Bu9.setFont(font1)
         self.Bu9.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -180,7 +164,7 @@ class Ui_MainWindow(object):
         self.Bu8 = QPushButton(self.Botones)
         self.Bu8.setObjectName(u"Bu8")
         self.Bu8.setGeometry(QRect(190, 240, 71, 71))
-        self.Bu8.setFont(font2)
+        self.Bu8.setFont(font1)
         self.Bu8.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -197,7 +181,7 @@ class Ui_MainWindow(object):
         self.Bu5 = QPushButton(self.Botones)
         self.Bu5.setObjectName(u"Bu5")
         self.Bu5.setGeometry(QRect(190, 330, 71, 71))
-        self.Bu5.setFont(font2)
+        self.Bu5.setFont(font1)
         self.Bu5.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -214,7 +198,7 @@ class Ui_MainWindow(object):
         self.Bu6 = QPushButton(self.Botones)
         self.Bu6.setObjectName(u"Bu6")
         self.Bu6.setGeometry(QRect(280, 330, 71, 71))
-        self.Bu6.setFont(font2)
+        self.Bu6.setFont(font1)
         self.Bu6.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -231,12 +215,12 @@ class Ui_MainWindow(object):
         self.Bt_restar = QPushButton(self.Botones)
         self.Bt_restar.setObjectName(u"Bt_restar")
         self.Bt_restar.setGeometry(QRect(370, 330, 71, 71))
-        font4 = QFont()
-        font4.setFamilies([u"Vrinda"])
-        font4.setPointSize(30)
-        font4.setBold(True)
-        font4.setItalic(False)
-        self.Bt_restar.setFont(font4)
+        font3 = QFont()
+        font3.setFamilies([u"Vrinda"])
+        font3.setPointSize(30)
+        font3.setBold(True)
+        font3.setItalic(False)
+        self.Bt_restar.setFont(font3)
         self.Bt_restar.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -253,7 +237,7 @@ class Ui_MainWindow(object):
         self.Bu4 = QPushButton(self.Botones)
         self.Bu4.setObjectName(u"Bu4")
         self.Bu4.setGeometry(QRect(100, 330, 71, 71))
-        self.Bu4.setFont(font2)
+        self.Bu4.setFont(font1)
         self.Bu4.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -270,7 +254,7 @@ class Ui_MainWindow(object):
         self.Bt_sumar = QPushButton(self.Botones)
         self.Bt_sumar.setObjectName(u"Bt_sumar")
         self.Bt_sumar.setGeometry(QRect(370, 420, 71, 71))
-        self.Bt_sumar.setFont(font2)
+        self.Bt_sumar.setFont(font1)
         self.Bt_sumar.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -287,7 +271,7 @@ class Ui_MainWindow(object):
         self.Bu1 = QPushButton(self.Botones)
         self.Bu1.setObjectName(u"Bu1")
         self.Bu1.setGeometry(QRect(100, 420, 71, 71))
-        self.Bu1.setFont(font2)
+        self.Bu1.setFont(font1)
         self.Bu1.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -304,7 +288,7 @@ class Ui_MainWindow(object):
         self.Bu3 = QPushButton(self.Botones)
         self.Bu3.setObjectName(u"Bu3")
         self.Bu3.setGeometry(QRect(280, 420, 71, 71))
-        self.Bu3.setFont(font2)
+        self.Bu3.setFont(font1)
         self.Bu3.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -321,7 +305,7 @@ class Ui_MainWindow(object):
         self.Bu2 = QPushButton(self.Botones)
         self.Bu2.setObjectName(u"Bu2")
         self.Bu2.setGeometry(QRect(190, 420, 71, 71))
-        self.Bu2.setFont(font2)
+        self.Bu2.setFont(font1)
         self.Bu2.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -338,7 +322,7 @@ class Ui_MainWindow(object):
         self.Bt_igual = QPushButton(self.Botones)
         self.Bt_igual.setObjectName(u"Bt_igual")
         self.Bt_igual.setGeometry(QRect(370, 510, 71, 71))
-        self.Bt_igual.setFont(font2)
+        self.Bt_igual.setFont(font1)
         self.Bt_igual.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 170, 255);\n"
@@ -355,7 +339,7 @@ class Ui_MainWindow(object):
         self.Bu0 = QPushButton(self.Botones)
         self.Bu0.setObjectName(u"Bu0")
         self.Bu0.setGeometry(QRect(190, 510, 71, 71))
-        self.Bu0.setFont(font2)
+        self.Bu0.setFont(font1)
         self.Bu0.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: QLinearGradient(spread:pad x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0 rgba(156,152,215,100), stop: 0.4 rgba(58,52,151,100), stop: 1.0 rgba(78,70,190,100));\n"
@@ -372,7 +356,7 @@ class Ui_MainWindow(object):
         self.Bt_coma = QPushButton(self.Botones)
         self.Bt_coma.setObjectName(u"Bt_coma")
         self.Bt_coma.setGeometry(QRect(280, 510, 71, 71))
-        self.Bt_coma.setFont(font2)
+        self.Bt_coma.setFont(font1)
         self.Bt_coma.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -389,10 +373,10 @@ class Ui_MainWindow(object):
         self.Ta_Historial = QTableWidget(self.Botones)
         self.Ta_Historial.setObjectName(u"Ta_Historial")
         self.Ta_Historial.setGeometry(QRect(460, 10, 201, 571))
-        font5 = QFont()
-        font5.setBold(False)
-        font5.setStyleStrategy(QFont.PreferDefault)
-        self.Ta_Historial.setFont(font5)
+        font4 = QFont()
+        font4.setBold(False)
+        font4.setStyleStrategy(QFont.PreferDefault)
+        self.Ta_Historial.setFont(font4)
         self.Ta_Historial.setStyleSheet(u"QTableView {\n"
 "    gridline-color: white;\n"
 "}\n"
@@ -413,7 +397,7 @@ class Ui_MainWindow(object):
 "	text-align: center;\n"
 "}\n"
 "")
-        self.Ta_Historial.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.Ta_Historial.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         self.Ta_Historial.setRowCount(0)
         self.Ta_Historial.setColumnCount(0)
         self.Ta_Historial.horizontalHeader().setStretchLastSection(False)
@@ -421,7 +405,7 @@ class Ui_MainWindow(object):
         self.Bt_paren1 = QPushButton(self.Botones)
         self.Bt_paren1.setObjectName(u"Bt_paren1")
         self.Bt_paren1.setGeometry(QRect(10, 510, 71, 71))
-        self.Bt_paren1.setFont(font2)
+        self.Bt_paren1.setFont(font1)
         self.Bt_paren1.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -438,7 +422,7 @@ class Ui_MainWindow(object):
         self.Bt_paren2 = QPushButton(self.Botones)
         self.Bt_paren2.setObjectName(u"Bt_paren2")
         self.Bt_paren2.setGeometry(QRect(10, 420, 71, 71))
-        self.Bt_paren2.setFont(font2)
+        self.Bt_paren2.setFont(font1)
         self.Bt_paren2.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -455,7 +439,7 @@ class Ui_MainWindow(object):
         self.Bt_elevar = QPushButton(self.Botones)
         self.Bt_elevar.setObjectName(u"Bt_elevar")
         self.Bt_elevar.setGeometry(QRect(100, 150, 71, 71))
-        self.Bt_elevar.setFont(font4)
+        self.Bt_elevar.setFont(font3)
         self.Bt_elevar.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -472,15 +456,14 @@ class Ui_MainWindow(object):
         self.Le_pantalla = QLineEdit(self.Botones)
         self.Le_pantalla.setObjectName(u"Le_pantalla")
         self.Le_pantalla.setGeometry(QRect(10, 10, 431, 111))
-        font6 = QFont()
-        font6.setPointSize(60)
-        self.Le_pantalla.setFont(font6)
+        font5 = QFont()
+        font5.setPointSize(60)
+        self.Le_pantalla.setFont(font5)
         self.Le_pantalla.setStyleSheet(u"color:rgb(255, 255, 255);")
-        self.Le_pantalla.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
         self.Bt_raiz = QPushButton(self.Botones)
         self.Bt_raiz.setObjectName(u"Bt_raiz")
         self.Bt_raiz.setGeometry(QRect(100, 510, 71, 71))
-        self.Bt_raiz.setFont(font2)
+        self.Bt_raiz.setFont(font1)
         self.Bt_raiz.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -497,7 +480,7 @@ class Ui_MainWindow(object):
         self.Bt_papelera = QPushButton(self.Botones)
         self.Bt_papelera.setObjectName(u"Bt_papelera")
         self.Bt_papelera.setGeometry(QRect(580, 500, 71, 71))
-        self.Bt_papelera.setFont(font2)
+        self.Bt_papelera.setFont(font1)
         self.Bt_papelera.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -514,7 +497,7 @@ class Ui_MainWindow(object):
         self.Bt_sen = QPushButton(self.Botones)
         self.Bt_sen.setObjectName(u"Bt_sen")
         self.Bt_sen.setGeometry(QRect(10, 330, 71, 71))
-        self.Bt_sen.setFont(font2)
+        self.Bt_sen.setFont(font1)
         self.Bt_sen.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"
@@ -531,7 +514,7 @@ class Ui_MainWindow(object):
         self.Bt_cos = QPushButton(self.Botones)
         self.Bt_cos.setObjectName(u"Bt_cos")
         self.Bt_cos.setGeometry(QRect(10, 240, 71, 71))
-        self.Bt_cos.setFont(font2)
+        self.Bt_cos.setFont(font1)
         self.Bt_cos.setStyleSheet(u"QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(85, 85, 255);\n"

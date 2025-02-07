@@ -5,6 +5,7 @@ import re
 import sys
 from PyQt6.QtWidgets import * 
 from PyQt6 import uic  
+from PyQt6.QtGui import QIcon
 
 class pantalla(QMainWindow): # Se crea una clase por ventana
     def __init__(self): 
@@ -12,6 +13,7 @@ class pantalla(QMainWindow): # Se crea una clase por ventana
         file_name = 'calculadora.ui'
         uic.loadUi(os.path.abspath(file_name), self)  # Cargamos la interfaz de Designer
         self.setWindowTitle("Calculadora") # Nombre de la Ventana al abrir la aplicación
+        self.setWindowIcon(QIcon("calculadora_icon.ico"))
         self.expresion = "" 
 
         for i in range(10):
