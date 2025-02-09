@@ -460,6 +460,7 @@ class Ui_MainWindow(object):
         font5.setPointSize(60)
         self.Le_pantalla.setFont(font5)
         self.Le_pantalla.setStyleSheet(u"color:rgb(255, 255, 255);")
+        self.Le_pantalla.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
         self.Bt_raiz = QPushButton(self.Botones)
         self.Bt_raiz.setObjectName(u"Bt_raiz")
         self.Bt_raiz.setGeometry(QRect(100, 510, 71, 71))
